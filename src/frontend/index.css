@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Apple Calendar Dark Theme ───────────────────────────── */
+:root {
+  --background: 0 0 0;
+  --foreground: 1 0 0;
+  --card: 0.143 0.003 285;
+  --card-foreground: 1 0 0;
+  --popover: 0.143 0.003 285;
+  --popover-foreground: 1 0 0;
+  --primary: 0.57 0.22 27;
+  --primary-foreground: 1 0 0;
+  --secondary: 0.21 0.003 285;
+  --secondary-foreground: 1 0 0;
+  --muted: 0.21 0.003 285;
+  --muted-foreground: 0.62 0.004 255;
+  --accent: 0.72 0.18 62;
+  --accent-foreground: 1 0 0;
+  --destructive: 0.57 0.22 27;
+  --destructive-foreground: 1 0 0;
+  --border: 0.25 0 0;
+  --input: 0.21 0.003 285;
+  --ring: 0.57 0.22 27;
+  --radius: 10px;
+  --chart-1: 0.72 0.2 145;
+  --chart-2: 0.53 0.22 250;
+  --chart-3: 0.72 0.18 62;
+  --chart-4: 0.57 0.22 27;
+  --chart-5: 0.79 0.12 222;
+  --sidebar: 0.143 0.003 285;
+  --sidebar-foreground: 1 0 0;
+  --sidebar-primary: 0.57 0.22 27;
+  --sidebar-primary-foreground: 1 0 0;
+  --sidebar-accent: 0.21 0.003 285;
+  --sidebar-accent-foreground: 1 0 0;
+  --sidebar-border: 0.25 0 0;
+  --sidebar-ring: 0.57 0.22 27;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+#root {
+  height: 100dvh;
+  overflow: hidden;
+  background: #000;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Scrollbar hide for settings panel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
